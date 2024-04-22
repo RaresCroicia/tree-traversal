@@ -97,13 +97,17 @@ class Tree:
             print(str(node.data) + ' ')
             self._printPreorderTree(node.left)
             self._printPreorderTree(node.right)
-        pass
 
     def _printPostorderTree(self, node):
         if node is not None:
             self._printPostorderTree(node.left)
             self._printPostorderTree(node.right)
             print(str(node.data) + ' ')
-        pass
-
-
+        
+    def useless(self):
+        """Useless method
+        
+        Returns:
+            None
+        """
+        print("This is a useless method")
